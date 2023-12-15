@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="minimalista.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mi nombre</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido a mi portafolio</h2>
+        <p>Esta es una breve descripción de quién soy y lo que hago.</p>
+        <a href="#sobre-mi" class="boton">Conoce más sobre mí</a>
+      </section>
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Esta es una descripción más detallada de quién soy y mis habilidades.
+        </p>
+        <a href="#proyectos" class="boton">Ver mis proyectos</a>
+      </section>
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+          <li>
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto 1.</p>
+            <a href="#">Ver proyecto 1</a>
+          </li>
+          <li>
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto 2.</p>
+            <a href="#">Ver proyecto 2</a>
+          </li>
+          <li>
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto 3.</p>
+            <a href="#">Ver proyecto 3</a>
+          </li>
+        </ul>
+        <a href="#contacto" class="boton">Contáctame</a>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Mi nombre. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
